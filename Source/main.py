@@ -1,5 +1,7 @@
 import torch
+import pandas as pd
+import numpy as np
 
-device = torch.cuda.is_available() 
-
+device = "cuda" if torch.cuda.is_available() else "cpu"
 print(device)
+
